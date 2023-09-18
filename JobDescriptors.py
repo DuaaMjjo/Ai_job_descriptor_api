@@ -3,7 +3,7 @@ from langchain.llms import OpenAI
 from langchain import PromptTemplate
 from langchain.chains import LLMChain
 
-os.environ['OPENAI_API_KEY'] = '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'
+os.environ['OPENAI_API_KEY'] = ''
 
 
 class JobDescriptor:
