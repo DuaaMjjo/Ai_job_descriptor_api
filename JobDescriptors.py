@@ -3,6 +3,7 @@ from langchain.llms import OpenAI
 from langchain import PromptTemplate
 from langchain.chains import LLMChain
 
+os.environ.get("OPENAI_API_KEY")
 
 class JobDescriptor:
     llm = OpenAI(model_name='text-davinci-003',
