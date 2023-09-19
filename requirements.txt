@@ -2,6 +2,6 @@ openai
 langchain
 uvicorn
 fastapi
-pydantic==1
+pydantic==2
 charset-normalizer
 chardet
