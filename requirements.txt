@@ -2,3 +2,6 @@ openai
 langchain
 uvicorn
 fastapi
+charset-normalizer
+chardet
+pytorch
