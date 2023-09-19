@@ -4,4 +4,3 @@ uvicorn
 fastapi
 charset-normalizer===3.1.0
 chardet
-pytorch
