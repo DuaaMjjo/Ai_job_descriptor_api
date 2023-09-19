@@ -3,5 +3,6 @@ langchain
 uvicorn
 fastapi
 pydantic
+bump-pydantic
 charset-normalizer
 chardet
