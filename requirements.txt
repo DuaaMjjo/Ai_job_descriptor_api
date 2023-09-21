@@ -1,7 +1,7 @@
-uvicorn==0.20.0 
-fastapi==0.103.0 
-pydantic==2.3.0
+uvicorn==0.20.0
+fastapi==0.91.0
+pydantic==1.10.4
 openai
 langchain
 charset-normalizer==3.2.0
-chardet==4.0.0
+chardet
