@@ -1,12 +1,18 @@
 # 1. Library imports
 from fastapi import FastAPI
 from JobDescriptors import JobDescriptor
+from fastapi.middleware.cors import CORSMiddleware
 
 # 2. Create the app object
 app = FastAPI()
 
-
-# 3. update scores from the passed description
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 @app.post('/')
 def job_descriptor(company: str, position: str, exp: str):
     jd = JobDescriptor()
