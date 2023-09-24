@@ -13,6 +13,8 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+@app.post('/')
 def job_descriptor(company: str, job_title: str, job_type: str, location: str, experience: str):
     jd = JobDescriptor()
     # Run the chain only specifying the input variables.
