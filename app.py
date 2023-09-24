@@ -13,11 +13,14 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-@app.post('/')
-def job_descriptor(company: str, position: str, exp: str):
+def job_descriptor(company: str, job_title: str, job_type: str, location: str, experience: str):
     jd = JobDescriptor()
     # Run the chain only specifying the input variables.
-    description = jd.my_chain.run({"name_of_company": company, "job_Position": position, "year_of_experience": exp})
+    description = jd.my_chain.run({"name_of_company": company,
+                                   "job_title": job_title,
+                                   "job_type": job_type,
+                                   "location": location,
+                                   "year_of_experience": experience})
 
     return {
         'Job description': description,
